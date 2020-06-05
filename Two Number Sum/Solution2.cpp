@@ -8,12 +8,12 @@ Method: HashMap to store the values
 using namespace std;
 
 vector<int> twoNumberSum(vector<int> array, int targetSum) {
-	map<int,int> m;
+	unordered_set<int> s;
 	for(int i : array) {
-		auto it = m.find(targetSum - i);
-		if(it != m.end())
+		auto it = s.find(targetSum - i);
+		if(it != s.end())
 			return {i, targetSum - i};
-		m[i] = i;
+		s.insert(i);
 	}
 	return {};
 }
