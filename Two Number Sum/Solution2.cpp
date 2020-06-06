@@ -23,4 +23,5 @@ int main() {
 	int targetSum = 10;
 	vector<int> res = twoNumberSum(num, targetSum);
 	if (res.size() == 2)
-		cout << res[0] << " " << res[1];}
+		cout << res[0] << " " << res[1];
+}
