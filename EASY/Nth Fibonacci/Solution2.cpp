@@ -5,9 +5,10 @@ SC: O(n)
 Method: Store Fibonacci value in a Map after computation to avoid redundant, unecessary computation
 *****************************************************/
 
+#include<unordered_map>
 using namespace std;
 
-int fibHelper(int n, map<int,int> m) {
+int fibHelper(int n, unordered_map<int,int> m) {
 	if(m.find(n) != m.end()) {
 		return m[n];
 	} else {
@@ -17,7 +18,7 @@ int fibHelper(int n, map<int,int> m) {
 }
 
 int getNthFib(int n) {
-	map<int,int> m;
+	unordered_map<int,int> m;
 	m[1] = 0;
 	m[2] = 1;
   return fibHelper(n, m);
