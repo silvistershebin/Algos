@@ -1,5 +1,5 @@
-//Iterative
 /****************************************************
+Iterative Approach
 TC: O(n)
 SC: O(1)
 Method: use 4 pointers(sC, eC, sR, eR) and 4 for loops
