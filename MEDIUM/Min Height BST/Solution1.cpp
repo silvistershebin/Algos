@@ -1,5 +1,5 @@
 /****************************************************
-TC: O(nlogn)
+TC: O(nlogn) : every insertion takes logn time
 SC: O(n) : to store n elements
 Method: Recursive method. The middle element will be the root node - call this recursively.
 *****************************************************/
