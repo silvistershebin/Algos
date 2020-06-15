@@ -1,3 +1,10 @@
+/****************************************************
+Similar to Solution1. Here the insertion is done within the function.
+TC: O(nlogn)
+SC: O(n) : to store n elements
+Method: Recursive method. The middle element will be the root node - call this recursively.
+*****************************************************/
+
 using namespace std;
 
 class BST {
