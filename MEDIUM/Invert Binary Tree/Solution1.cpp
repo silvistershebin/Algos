@@ -1,6 +1,6 @@
 /****************************************************
 TC: O(n)
-SC: O(1)
+SC: O(d) : call stack (d is depth)
 Method: Swap and call left and right branches recursively
 *****************************************************/
 
