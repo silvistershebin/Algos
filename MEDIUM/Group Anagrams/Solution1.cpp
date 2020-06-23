@@ -1,11 +1,7 @@
 /****************************************************
 TC: O(wn(log(n))) : (w: no. of words; n: length of longest word)
 SC: O(wn)
-Method:
-	1. Iterate through the string
-	2. Check pallindrom by checking opposite characters : 2 cases
-		a. Odd length
-		b. Even Length
+Method: Sort all the words and store it in hashmap as a vector
 *****************************************************/
 
 #include <vector>
@@ -13,7 +9,6 @@ Method:
 using namespace std;
 
 vector<vector<string>> groupAnagrams(vector<string> words) {
-  vector<string> sortedString;
 	unordered_map<string, vector<string>> m;
 	for(string s : words) {
 		string temp = s;
