@@ -1,7 +1,7 @@
 /****************************************************
 TC: O(N) : (Total number of elements)
 SC: O(1)
-Method: 3 pointer method - adjust the pointer by comparing the value of the nodes
+Method: (Iterative) 3 pointer method - adjust the pointer by comparing the value of the nodes
 *****************************************************/
 
 #include <vector>
