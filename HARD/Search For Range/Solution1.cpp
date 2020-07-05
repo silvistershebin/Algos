@@ -3,8 +3,8 @@ TC: O(logN)
 SC: O(logN)
 Method: Recursive 
 	1. Use Simple Binary Search twice
-	2. In first iteration, if number is found, move to the left if the prev elem is also target element (check IOoB)
-	3. Second: if number is found, move to the right if next element is also target (check IOoB)
+	2. In first iteration, if number is found, move to the left if the prev elem is also target element (check IOoB) else set the beginning of range.
+	3. Second: if number is found, move to the right if next element is also target (check IOoB) else set the end of the range.
 *****************************************************/
 
 #include <vector>
