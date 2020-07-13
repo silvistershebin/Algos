@@ -8,15 +8,13 @@ Method: Simple Iterative Solution
 using namespace std;
 
 vector<vector<int>> powerset(vector<int> array) {
-  vector<vector<int>> pset;
-	pset.push_back({});
+  vector<vector<int>> pset = {{}};
 	for(int num : array) {
-		vector<vector<int>> temp = pset;
-		for(int i = 0; i < pset.size(); i++) {
-			temp[i].push_back(num);
-		}
-		for(int i = 0; i < temp.size(); i++) {
-			pset.push_back(temp[i]);
+		int len = pset.size();
+		for(int i = 0; i < len; i++) {
+			vector<int> temp = pset[i];
+			temp.push_back(num);
+			pset.push_back(temp);
 		}
  	}
   return pset;
