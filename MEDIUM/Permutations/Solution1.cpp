@@ -29,6 +29,6 @@ void swap(vector<int> *array, int i, int j) {
 
 vector<vector<int>> getPermutations(vector<int> array) {
 	vector<vector<int>> permutations;
-  getPermutationsHelper(0, &array, &permutations);
-  return permutations;
+	getPermutationsHelper(0, &array, &permutations);
+	return permutations;
 }
